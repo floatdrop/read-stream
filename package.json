@@ -1,6 +1,6 @@
 {
   "name": "read-streams",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Read streams and emits data from them (with/without ordering)",
   "main": "index.js",
   "directories": {
