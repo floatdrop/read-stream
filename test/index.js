@@ -12,6 +12,12 @@ describe('read', function () {
             .on('end', done);
     });
 
+    it('should accept options', function (done) {
+        read({})
+            .on('data', done)
+            .on('end', done);
+    });
+
     it('should accept array of streams', function (done) {
         var stream = through.obj();
 
