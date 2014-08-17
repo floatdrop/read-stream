@@ -2,6 +2,8 @@
 
 Reads multiple streams _in order_ and emits data/errors from them. Inspired by [ordered-read-streams](https://github.com/armed/ordered-read-streams).
 
+If you want unordered stream of data - then you should use [merge-stream](https://github.com/grncdr/merge-stream).
+
 ## Usage
 
 ```js
