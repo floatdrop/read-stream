@@ -15,6 +15,7 @@ function read() {
 
     function processStream(stream) {
         stream.on('data', rs.push.bind(rs));
+        stream.on('error', rs.emit.bind(rs, 'error'));
         stream.on('end', next);
     }
 

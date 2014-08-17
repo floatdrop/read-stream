@@ -1,7 +1,7 @@
 /* global describe, it */
 
-// var should = require('should');
-// var through = require('through2');
+var should = require('should');
+var through = require('through2');
 var read = require('../');
 
 describe('read', function () {
@@ -9,5 +9,19 @@ describe('read', function () {
         read()
             .on('data', done)
             .on('end', done);
+    });
+
+    it('should emit stream errors downstream', function (done) {
+        var stream = through.obj();
+
+        setTimeout(function () {
+            stream.emit('error', new Error('Bang!'));
+        }, 10);
+
+        read(stream)
+            .on('error', function (err) {
+                should.exist(err);
+                done();
+            });
     });
 });
