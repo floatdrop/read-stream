@@ -1,6 +1,6 @@
 # read-streams [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][depstat-image]][depstat-url]
 
-Reads multiple streams _in order_ and emits data/errors from them.
+Reads multiple streams _in order_ and emits data/errors from them. Inspired by [ordered-read-streams](https://github.com/armed/ordered-read-streams).
 
 ## Usage
 
