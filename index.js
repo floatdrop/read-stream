@@ -9,8 +9,6 @@ function read() {
 
     if (Array.isArray(streams[0])) { streams = streams[0]; }
 
-    options.allowHalfOpen = true;
-
     var rs = through(options);
 
     function processStream(stream) {

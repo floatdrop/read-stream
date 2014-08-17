@@ -24,6 +24,10 @@ Readable stream, that will be read. You can pass `Array` as first argument (inst
 ##### options
 Type: `Object`  
 
+###### objectMode
+Type: `Boolean`
+Default: `true`
+
 ## License
 
 MIT (c) 2014 Vsevolod Strukchinsky
