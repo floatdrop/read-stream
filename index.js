@@ -1,18 +1,25 @@
 var through = require('through2');
 
 function read() {
-    var streams = Array.prototype.slice.call(arguments, 0);
-    var options = { objectMode: true };
+    var args = Array.prototype.slice.call(arguments, 0);
+    var streams;
+    var options = {};
 
-    var last = streams[streams.length - 1];
-    if (last && typeof last.pipe !== 'function') { options = last; }
+    if (Array.isArray(args[0])) { streams = args.shift(); }
 
-    if (Array.isArray(streams[0])) { streams = streams[0]; }
+    var last = args[args.length - 1];
+    if (last && typeof last.pipe !== 'function') {
+        options = args.pop();
+    }
+
+    if (!streams) { streams = args; }
+
+    options.objectMode = options.objectMode === undefined ? true : options.objectMode;
 
     var rs = through(options);
 
     function processStream(stream) {
-        stream.on('data', rs.push.bind(rs));
+        stream.on('data',rs.push.bind(rs));
         stream.on('error', rs.emit.bind(rs, 'error'));
         stream.on('end', next);
     }
