@@ -42,3 +42,6 @@ MIT (c) 2014 Vsevolod Strukchinsky
 
 [depstat-url]: https://david-dm.org/floatdrop/read-streams
 [depstat-image]: https://david-dm.org/floatdrop/read-streams.png?theme=shields.io
+
+[coveralls-url]: https://coveralls.io/r/floatdrop/read-streams
+[coveralls-image]: https://coveralls.io/repos/floatdrop/read-streams/badge.png
