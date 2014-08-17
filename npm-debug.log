@@ -1,0 +1,119 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.4.9
+3 info using node@v0.10.28
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /Users/floatdrop/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/var/folders/nf/3sdq5zp50gz7bh4p4qmy14nmnrg5pw/T/npm-17917-2pgOn4g1/1408260949717-0.23791787587106228/tmp.tgz',
+10 verbose tar pack   '.' ]
+11 verbose tarball /var/folders/nf/3sdq5zp50gz7bh4p4qmy14nmnrg5pw/T/npm-17917-2pgOn4g1/1408260949717-0.23791787587106228/tmp.tgz
+12 verbose folder .
+13 info prepublish read-streams@0.0.1
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /Users/floatdrop/.npm/1f1177db-tar.lock
+16 silly lockFile 4b9e9a41-9717-0-23791787587106228-tmp-tgz tar:///var/folders/nf/3sdq5zp50gz7bh4p4qmy14nmnrg5pw/T/npm-17917-2pgOn4g1/1408260949717-0.23791787587106228/tmp.tgz
+17 verbose lock tar:///var/folders/nf/3sdq5zp50gz7bh4p4qmy14nmnrg5pw/T/npm-17917-2pgOn4g1/1408260949717-0.23791787587106228/tmp.tgz /Users/floatdrop/.npm/4b9e9a41-9717-0-23791787587106228-tmp-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 4b9e9a41-9717-0-23791787587106228-tmp-tgz tar:///var/folders/nf/3sdq5zp50gz7bh4p4qmy14nmnrg5pw/T/npm-17917-2pgOn4g1/1408260949717-0.23791787587106228/tmp.tgz
+21 silly lockFile 4b9e9a41-9717-0-23791787587106228-tmp-tgz tar:///var/folders/nf/3sdq5zp50gz7bh4p4qmy14nmnrg5pw/T/npm-17917-2pgOn4g1/1408260949717-0.23791787587106228/tmp.tgz
+22 verbose tar unpack /var/folders/nf/3sdq5zp50gz7bh4p4qmy14nmnrg5pw/T/npm-17917-2pgOn4g1/1408260949717-0.23791787587106228/tmp.tgz
+23 silly lockFile 0eb7f2a2-p-npm-read-streams-0-0-1-package tar:///Users/floatdrop/.npm/read-streams/0.0.1/package
+24 verbose lock tar:///Users/floatdrop/.npm/read-streams/0.0.1/package /Users/floatdrop/.npm/0eb7f2a2-p-npm-read-streams-0-0-1-package.lock
+25 silly lockFile 4b9e9a41-9717-0-23791787587106228-tmp-tgz tar:///var/folders/nf/3sdq5zp50gz7bh4p4qmy14nmnrg5pw/T/npm-17917-2pgOn4g1/1408260949717-0.23791787587106228/tmp.tgz
+26 verbose lock tar:///var/folders/nf/3sdq5zp50gz7bh4p4qmy14nmnrg5pw/T/npm-17917-2pgOn4g1/1408260949717-0.23791787587106228/tmp.tgz /Users/floatdrop/.npm/4b9e9a41-9717-0-23791787587106228-tmp-tgz.lock
+27 silly gunzTarPerm modes [ '755', '644' ]
+28 silly gunzTarPerm extractEntry package.json
+29 silly gunzTarPerm extractEntry .npmignore
+30 silly gunzTarPerm extractEntry README.md
+31 silly gunzTarPerm extractEntry example.js
+32 silly gunzTarPerm extractEntry index.js
+33 silly gunzTarPerm extractEntry test.js
+34 silly lockFile 0eb7f2a2-p-npm-read-streams-0-0-1-package tar:///Users/floatdrop/.npm/read-streams/0.0.1/package
+35 silly lockFile 0eb7f2a2-p-npm-read-streams-0-0-1-package tar:///Users/floatdrop/.npm/read-streams/0.0.1/package
+36 silly lockFile 4b9e9a41-9717-0-23791787587106228-tmp-tgz tar:///var/folders/nf/3sdq5zp50gz7bh4p4qmy14nmnrg5pw/T/npm-17917-2pgOn4g1/1408260949717-0.23791787587106228/tmp.tgz
+37 silly lockFile 4b9e9a41-9717-0-23791787587106228-tmp-tgz tar:///var/folders/nf/3sdq5zp50gz7bh4p4qmy14nmnrg5pw/T/npm-17917-2pgOn4g1/1408260949717-0.23791787587106228/tmp.tgz
+38 silly lockFile 3a52ce78- .
+39 silly lockFile 3a52ce78- .
+40 silly publish { name: 'read-streams',
+40 silly publish   version: '0.0.1',
+40 silly publish   description: 'Read streams and emits data from them (with/without ordering)',
+40 silly publish   main: 'index.js',
+40 silly publish   directories: { test: 'test' },
+40 silly publish   scripts: { test: 'mocha -R spec' },
+40 silly publish   repository:
+40 silly publish    { type: 'git',
+40 silly publish      url: 'git://github.com/floatdrop/read-streams.git' },
+40 silly publish   keywords: [ 'stream', 'read', 'order', 'ordered' ],
+40 silly publish   author: { name: 'Vsevolod Strukchinsky', email: 'floatdrop@gmail.com' },
+40 silly publish   license: 'MIT',
+40 silly publish   bugs: { url: 'https://github.com/floatdrop/read-streams/issues' },
+40 silly publish   homepage: 'https://github.com/floatdrop/read-streams',
+40 silly publish   devDependencies:
+40 silly publish    { mocha: '^1.21.4',
+40 silly publish      should: '^4.0.4',
+40 silly publish      'stream-assert': '^0.2.0',
+40 silly publish      through2: '^0.6.1' },
+40 silly publish   dependencies: { through2: '^0.6.1' },
+40 silly publish   readme: '# read-streams [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][depstat-image]][depstat-url]\n\nReads multiple streams _in order_ and emits data/errors from them.\n\n## Usage\n\n```js\nvar read = require(\'read-streams\');\nvar stream1 = new Stream();\nvar stream2 = new Stream();\n\nread(stream1, stream2).pipe(console.log)\n```\n\n## API\n\n#### read(stream..., [options])\n\n##### stream\nType: `stream.Readable`  \n\nReadable stream, that will be read. You can pass `Array` as first argument (instead of passing each stream as argument).\n\n##### options\nType: `Object`  \n\n## License\n\nMIT (c) 2014 Vsevolod Strukchinsky\n\n[npm-url]: https://npmjs.org/package/read-streams\n[npm-image]: https://badge.fury.io/js/read-streams.png\n\n[travis-url]: http://travis-ci.org/floatdrop/read-streams\n[travis-image]: https://travis-ci.org/floatdrop/read-streams.png?branch=master\n\n[depstat-url]: https://david-dm.org/floatdrop/read-streams\n[depstat-image]: https://david-dm.org/floatdrop/read-streams.png?theme=shields.io\n',
+40 silly publish   readmeFilename: 'README.md',
+40 silly publish   _id: 'read-streams@0.0.1',
+40 silly publish   _shasum: 'fe400fbc65b427399915d837458bbd46bac4800e',
+40 silly publish   _from: '.' }
+41 verbose url raw read-streams
+42 verbose url resolving [ 'https://registry.npmjs.org/', './read-streams' ]
+43 verbose url resolved https://registry.npmjs.org/read-streams
+44 info trying registry request attempt 1 at 13:35:49
+45 http PUT https://registry.npmjs.org/read-streams
+46 http 403 https://registry.npmjs.org/read-streams
+47 verbose headers { date: 'Sun, 17 Aug 2014 07:35:49 GMT',
+47 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+47 verbose headers   'content-type': 'application/json',
+47 verbose headers   'cache-control': 'max-age=60',
+47 verbose headers   'content-length': '3799',
+47 verbose headers   'accept-ranges': 'bytes',
+47 verbose headers   via: '1.1 varnish',
+47 verbose headers   'x-served-by': 'cache-fra1229-FRA',
+47 verbose headers   'x-cache': 'MISS',
+47 verbose headers   'x-cache-hits': '0',
+47 verbose headers   'x-timer': 'S1408260949.129731,VS0,VE685',
+47 verbose headers   'keep-alive': 'timeout=10, max=50',
+47 verbose headers   connection: 'Keep-Alive' }
+48 error publish Failed PUT 403
+49 error Error: forbidden cannot modify pre-existing version: 0.0.1
+49 error old={"name":"read-streams","version":"0.0.1","description":"Read streams and emits data from them (with/without ordering)","main":"index.js","directories":{"test":"test"},"scripts":{"test":"mocha -R spec"},"repository":{"type":"git","url":"git://github.com/floatdrop/read-streams.git"},"keywords":["stream","read","order","ordered"],"author":{"name":"Vsevolod Strukchinsky","email":"floatdrop@gmail.com"},"license":"MIT","bugs":{"url":"https://github.com/floatdrop/read-streams/issues"},"homepage":"https://github.com/floatdrop/read-streams","devDependencies":{"mocha":"^1.21.4","should":"^4.0.4","stream-assert":"^0.2.0","through2":"^0.6.1"},"dependencies":{"through2":"^0.6.1"},"_id":"read-streams@0.0.1","_shasum":"9a239873013ea559d940dc61dbcda50a5decd853","_from":".","_npmVersion":"1.4.9","_npmUser":{"name":"floatdrop","email":"floatdrop@gmail.com"},"maintainers":[{"name":"floatdrop","email":"floatdrop@gmail.com"}],"dist":{"shasum":"9a239873013ea559d940dc61dbcda50a5decd853","tarball":"http://registry.npmjs.org/read-streams/-/read-streams-0.0.1.tgz"}}
+49 error new={"name":"read-streams","version":"0.0.1","description":"Read streams and emits data from them (with/without ordering)","main":"index.js","directories":{"test":"test"},"scripts":{"test":"mocha -R spec"},"repository":{"type":"git","url":"git://github.com/floatdrop/read-streams.git"},"keywords":["stream","read","order","ordered"],"author":{"name":"Vsevolod Strukchinsky","email":"floatdrop@gmail.com"},"license":"MIT","bugs":{"url":"https://github.com/floatdrop/read-streams/issues"},"homepage":"https://github.com/floatdrop/read-streams","devDependencies":{"mocha":"^1.21.4","should":"^4.0.4","stream-assert":"^0.2.0","through2":"^0.6.1"},"dependencies":{"through2":"^0.6.1"},"readme":"# read-streams [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][depstat-image]][depstat-url]\u000a\u000aReads multiple streams _in order_ and emits data/errors from them.\u000a\u000a## Usage\u000a\u000a```js\u000avar read = require('read-streams');\u000avar stream1 = new Stream();\u000avar stream2 = new Stream();\u000a\u000aread(stream1, stream2).pipe(console.log)\u000a```\u000a\u000a## API\u000a\u000a#### read(stream..., [options])\u000a\u000a##### stream\u000aType: `stream.Readable`  \u000a\u000aReadable stream, that will be read. You can pass `Array` as first argument (instead of passing each stream as argument).\u000a\u000a##### options\u000aType: `Object`  \u000a\u000a## License\u000a\u000aMIT (c) 2014 Vsevolod Strukchinsky\u000a\u000a[npm-url]: https://npmjs.org/package/read-streams\u000a[npm-image]: https://badge.fury.io/js/read-streams.png\u000a\u000a[travis-url]: http://travis-ci.org/floatdrop/read-streams\u000a[travis-image]: https://travis-ci.org/floatdrop/read-streams.png?branch=master\u000a\u000a[depstat-url]: https://david-dm.org/floatdrop/read-streams\u000a[depstat-image]: https://david-dm.org/floatdrop/read-streams.png?theme=shields.io\u000a","readmeFilename":"README.md","_id":"read-streams@0.0.1","_shasum":"fe400fbc65b427399915d837458bbd46bac4800e","_from":".","_npmVersion":"1.4.9","_npmUser":{"name":"floatdrop","email":"floatdrop@gmail.com"},"maintainers":[{"name":"floatdrop","email":"floatdrop@gmail.com"}],"dist":{"shasum":"fe400fbc65b427399915d837458bbd46bac4800e","tarball":"http://registry.npmjs.org/read-streams/-/read-streams-0.0.1.tgz"}}: read-streams
+49 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:273:14)
+49 error     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:211:65)
+49 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:123:22)
+49 error     at Request.EventEmitter.emit (events.js:98:17)
+49 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:893:14)
+49 error     at Request.EventEmitter.emit (events.js:117:20)
+49 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:844:12)
+49 error     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+49 error     at _stream_readable.js:919:16
+49 error     at process._tickCallback (node.js:419:13)
+50 error If you need help, you may report this *entire* log,
+50 error including the npm and node versions, at:
+50 error     <http://github.com/npm/npm/issues>
+51 error System Darwin 13.3.0
+52 error command "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+53 error cwd /Users/floatdrop/read-streams
+54 error node -v v0.10.28
+55 error npm -v 1.4.9
+56 verbose exit [ 1, true ]
