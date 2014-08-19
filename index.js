@@ -19,12 +19,13 @@ function read() {
     var rs = through(options);
 
     function processStream(stream) {
-        stream.on('data',rs.push.bind(rs));
+        stream.on('data', rs.push.bind(rs));
         stream.on('error', rs.emit.bind(rs, 'error'));
-        stream.on('end', next);
+        stream.once('end', next);
     }
 
     function next() {
+
         if (streams.length) {
             processStream(streams.shift());
         } else {
