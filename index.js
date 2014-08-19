@@ -5,7 +5,7 @@ function read() {
     var streams;
     var options = {};
 
-    if (Array.isArray(args[0])) { streams = args.shift(); }
+    if (args[0] && args[0].length && args[0].shift) { streams = args.shift(); }
 
     var last = args[args.length - 1];
     if (last && typeof last.pipe !== 'function') {
